@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project myUDPsock ****
+
+make all 
+g++ -c -Wall -I/usr/include/boost -Wwrite-strings -pipe -fPIC -march=native myUDPserver.cpp
+g++ -lboost_system myUDPserver.o  -o udpserver
+strip udpserver
+g++ -c -Wall -I/usr/include/boost -Wwrite-strings -pipe -fPIC -march=native test_asio.cpp
+g++ -lboost_system test_asio.o -o udpclient
+strip udpclient
+g++ -c -Wall -I/usr/include/boost -Wwrite-strings -pipe -fPIC -march=native test_.cpp
+test_.cpp: In function ‘int main()’:
+test_.cpp:79:17: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     char *msg = "thank you";
+g++ -lboost_system test_.o -o test_
+                 ^
+test_.cpp:81:13: warning: variable ‘bytes_sent’ set but not used [-Wunused-but-set-variable]
+     ssize_t bytes_sent;
+             ^
+strip udpclient
+
+**** Build Finished ****

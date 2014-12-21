@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
+	<section name="org.eclipse.cdt.internal.ui.text.QuickOutline">
+		<item value="true" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="254" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_Y_ORIGIN"/>
+		<item value="400" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_WIDTH"/>
+		<item value="true" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="328" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_HEIGHT"/>
+		<item value="635" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="NewClassWizardPage">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="gnome_wm_found"/>
+			<item value="check_wm_hints"/>
+			<item value="enable_x11r5_session_management"/>
+			<item value="nable_x11r5_session_management"/>
+			<item value="gtk_main"/>
+			<item value="xmms_remote_playlist_add_url_stringxmms_sessiongcharurl"/>
+			<item value="gtk_init"/>
+			<item value="gtk_signal_connect"/>
+			<item value="_NET_WM_SYNC_REQUEST"/>
+			<item value="gdk_window_enable_synchronized_configure"/>
+			<item value="gdk_window_configure_finished"/>
+		</list>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="0" key="askReindex.detail"/>
+	</section>
+	<section name="completion_proposal_size">
+		<item value="393" key="size.y"/>
+		<item value="756" key="size.x"/>
+	</section>
+</section>

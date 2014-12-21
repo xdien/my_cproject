@@ -1,0 +1,17 @@
+01:06:47 **** Incremental Build of configuration Debug for project DisplayImage ****
+make all 
+Building file: ../src/Displayimage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Displayimage.d" -MT"src/Displayimage.d" -o "src/Displayimage.o" "../src/Displayimage.cpp"
+../src/Displayimage.cpp:15:5: warning: first argument of ‘int main(int*, char**)’ should be ‘int’ [-Wmain]
+ int main(int agrc[1], char ** agrv)
+     ^
+../src/Displayimage.cpp: In function ‘int main(int*, char**)’:
+../src/Displayimage.cpp:19:13: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+  if(agrc != 2 || !image.data)
+             ^
+src/subdir.mk:18: recipe for target 'src/Displayimage.o' failed
+make: *** [src/Displayimage.o] Error 1
+
+01:06:50 Build Finished (took 3s.332ms)
+

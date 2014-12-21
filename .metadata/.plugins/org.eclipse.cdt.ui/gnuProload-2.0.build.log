@@ -1,0 +1,6 @@
+01:06:51 **** Build of configuration Default for project gnuProload-2.0 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+
+01:06:51 Build Finished (took 174ms)
+

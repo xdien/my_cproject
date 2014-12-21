@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.larswerkman.holocolorpicker.ColorPicker"
+        android:id="@+id/view_color_picker"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Chon"
+        android:id="@+id/button_okDialogPick"
+        android:layout_below="@+id/view_color_picker"
+        android:layout_alignRight="@+id/view_color_picker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy bỏ"
+        android:id="@+id/buttonCenDialogPick"
+        android:layout_alignBottom="@+id/button_okDialogPick"
+        android:layout_alignLeft="@+id/view_color_picker" />
+</RelativeLayout>

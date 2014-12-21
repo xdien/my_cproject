@@ -1,0 +1,259 @@
+
+**** Build of configuration Default for project xmms-1.2.11 ****
+
+make all 
+make  all-recursive
+make[1]: Entering directory '/home/xdien/workspace/xmms-1.2.11'
+Making all in intl
+make[2]: Entering directory '/home/xdien/workspace/xmms-1.2.11/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/intl'
+Making all in libxmms
+make[2]: Entering directory '/home/xdien/workspace/xmms-1.2.11/libxmms'
+make  all-am
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/libxmms'
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/libxmms'
+make[2]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/libxmms'
+Making all in xmms
+make[2]: Entering directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+make  all-recursive
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+Making all in defskin
+make[4]: Entering directory '/home/xdien/workspace/xmms-1.2.11/xmms/defskin'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/xmms/defskin'
+make[4]: Entering directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+if gcc -DHAVE_CONFIG_H -I. -I. -I.. -I. -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops -DDATA_DIR=\"/xmms\" -DPLUGIN_DIR=\"/usr/local/lib/xmms\" -DPLUGINSUBS=\"Output\",\"Input\",\"Effect\",\"General\",\"Visualization\" -DLOCALEDIR=\"/locale\" -I../intl -I..    -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -lglib-2.0  -pthread -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lfontconfig -lfreetype -Wl,--export-dynamic -lgmodule-2.0 -pthread -lgthread-2.0 -pthread -lglib-2.0 -MT main.o -MD -MP -MF ".deps/main.Tpo" -c -o main.o main.c; \
+then mv -f ".deps/main.Tpo" ".deps/main.Po"; else rm -f ".deps/main.Tpo"; exit 1; fi
+main.c: In function ‘read_config’:
+main.c:438:3: warning: pointer targets in passing argument 4 of ‘xmms_cfg_read_int’ differ in signedness [-Wpointer-sign]
+   xmms_cfg_read_int(cfgfile, "xmms", "snap_distance", &cfg.snap_distance);
+   ^
+In file included from main.c:35:0:
+../libxmms/configfile.h:57:10: note: expected ‘gint *’ but argument is of type ‘guint *’
+ gboolean xmms_cfg_read_int(ConfigFile * cfg, gchar * section, gchar * key, gint * value);
+          ^
+main.c: In function ‘save_config’:
+main.c:537:3: warning: ‘g_basename’ is deprecated (declared at /usr/include/glib-2.0/glib/gfileutils.h:168): Use 'g_path_get_basename' instead [-Wdeprecated-declarations]
+   cfg.disabled_iplugins = g_strdup(g_basename(((InputPlugin *) d_iplist->data)->filename));
+   ^
+main.c:542:4: warning: ‘g_basename’ is deprecated (declared at /usr/include/glib-2.0/glib/gfileutils.h:168): Use 'g_path_get_basename' instead [-Wdeprecated-declarations]
+    cfg.disabled_iplugins = g_strconcat(temp, ",", g_basename(((InputPlugin *) d_iplist->data)->filename), NULL);
+    ^
+main.c: In function ‘mainwin_press’:
+main.c:1371:6: warning: passing argument 4 of ‘gdk_pointer_grab’ from incompatible pointer type [enabled by default]
+      GDK_NONE, GDK_NONE, GDK_CURRENT_TIME);
+      ^
+In file included from /usr/include/gtk-2.0/gtk/gtk.h:32:0,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gdk/gdk.h:112:15: note: expected ‘struct GdkWindow *’ but argument is of type ‘struct _GdkAtom *’
+ GdkGrabStatus gdk_pointer_grab       (GdkWindow    *window,
+               ^
+main.c:1371:6: warning: passing argument 5 of ‘gdk_pointer_grab’ from incompatible pointer type [enabled by default]
+      GDK_NONE, GDK_NONE, GDK_CURRENT_TIME);
+      ^
+In file included from /usr/include/gtk-2.0/gtk/gtk.h:32:0,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gdk/gdk.h:112:15: note: expected ‘struct GdkCursor *’ but argument is of type ‘struct _GdkAtom *’
+ GdkGrabStatus gdk_pointer_grab       (GdkWindow    *window,
+               ^
+main.c: In function ‘mainwin_jump_to_time’:
+main.c:1470:2: warning: passing argument 3 of ‘gtk_signal_connect_full’ from incompatible pointer type [enabled by default]
+  gtk_signal_connect(GTK_OBJECT(mainwin_jtt), "key_press_event",
+  ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gtk/gtksignal.h:121:8: note: expected ‘GCallback’ but argument is of type ‘void (*)(struct GtkWidget *, struct GdkEventKey *, void *)’
+ gulong gtk_signal_connect_full   (GtkObject     *object,
+        ^
+main.c: In function ‘mainwin_jump_to_file_edit_real’:
+main.c:1669:2: warning: ‘g_strdown’ is deprecated (declared at /usr/include/glib-2.0/glib/gstrfuncs.h:207) [-Wdeprecated-declarations]
+  g_strdown(key);
+  ^
+main.c: In function ‘mainwin_url_ok_clicked’:
+main.c:2459:15: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+  char *text = gtk_entry_get_text(GTK_ENTRY(entry));
+               ^
+main.c: In function ‘mainwin_url_enqueue_clicked’:
+main.c:2482:7: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+  text = gtk_entry_get_text(GTK_ENTRY(entry));
+       ^
+main.c: In function ‘mainwin_show_add_url_window’:
+main.c:2496:9: warning: passing argument 2 of ‘util_create_add_url_window’ from incompatible pointer type [enabled by default]
+         mainwin_url_enqueue_clicked);
+         ^
+In file included from xmms.h:43:0,
+                 from main.c:20:
+util.h:36:12: note: expected ‘GtkSignalFunc’ but argument is of type ‘void (*)(struct GtkWidget *, struct GtkWidget *)’
+ GtkWidget *util_create_add_url_window(gchar *caption, GtkSignalFunc ok_func, GtkSignalFunc enqueue_func);
+            ^
+main.c:2496:9: warning: passing argument 3 of ‘util_create_add_url_window’ from incompatible pointer type [enabled by default]
+         mainwin_url_enqueue_clicked);
+         ^
+In file included from xmms.h:43:0,
+                 from main.c:20:
+util.h:36:12: note: expected ‘GtkSignalFunc’ but argument is of type ‘void (*)(struct GtkWidget *, struct GtkWidget *)’
+ GtkWidget *util_create_add_url_window(gchar *caption, GtkSignalFunc ok_func, GtkSignalFunc enqueue_func);
+            ^
+main.c:2502:2: warning: passing argument 3 of ‘gtk_signal_connect_full’ from incompatible pointer type [enabled by default]
+  gtk_signal_connect(GTK_OBJECT(mainwin_url_window), "key_press_event",
+  ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gtk/gtksignal.h:121:8: note: expected ‘GCallback’ but argument is of type ‘void (*)(struct GtkWidget *, struct GdkEventKey *, void *)’
+ gulong gtk_signal_connect_full   (GtkObject     *object,
+        ^
+main.c: In function ‘mainwin_eject_pushed’:
+main.c:2518:2: warning: passing argument 3 of ‘gtk_signal_connect_full’ from incompatible pointer type [enabled by default]
+  gtk_signal_connect(GTK_OBJECT(filebrowser), "key_press_event", util_dialog_keypress_cb,  NULL);
+  ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gtk/gtksignal.h:121:8: note: expected ‘GCallback’ but argument is of type ‘void (*)(struct GtkWidget *, struct GdkEventKey *, void *)’
+ gulong gtk_signal_connect_full   (GtkObject     *object,
+        ^
+main.c: In function ‘mainwin_set_icon’:
+main.c:3331:2: warning: passing argument 2 of ‘gdk_property_change’ makes pointer from integer without a cast [enabled by default]
+  gdk_property_change (win->window, icon_atom, icon_atom, 32, GDK_PROP_MODE_REPLACE, (guchar *)data, 2);
+  ^
+In file included from /usr/include/gtk-2.0/gdk/gdk.h:50:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:32,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gdk/gdkproperty.h:60:10: note: expected ‘GdkAtom’ but argument is of type ‘Atom’
+ void     gdk_property_change (GdkWindow     *window,
+          ^
+main.c:3331:2: warning: passing argument 3 of ‘gdk_property_change’ makes pointer from integer without a cast [enabled by default]
+  gdk_property_change (win->window, icon_atom, icon_atom, 32, GDK_PROP_MODE_REPLACE, (guchar *)data, 2);
+  ^
+In file included from /usr/include/gtk-2.0/gdk/gdk.h:50:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:32,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gdk/gdkproperty.h:60:10: note: expected ‘GdkAtom’ but argument is of type ‘Atom’
+ void     gdk_property_change (GdkWindow     *window,
+          ^
+main.c: In function ‘mainwin_recreate’:
+main.c:3490:2: warning: passing argument 2 of ‘gtk_signal_compat_matched’ from incompatible pointer type [enabled by default]
+  gtk_signal_disconnect_by_func(GTK_OBJECT(mainwin), mainwin_destroy, NULL);
+  ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gtk/gtksignal.h:141:6: note: expected ‘GCallback’ but argument is of type ‘void (*)(struct GtkWidget *, void *)’
+ void gtk_signal_compat_matched  (GtkObject     *object,
+      ^
+main.c: In function ‘output_failed’:
+main.c:3529:3: warning: passing argument 3 of ‘gtk_signal_connect_full’ from incompatible pointer type [enabled by default]
+   gtk_signal_connect(GTK_OBJECT(infobox), "destroy",gtk_widget_destroyed, &infobox);
+   ^
+In file included from /usr/include/gtk-2.0/gtk/gtkcalendar.h:40:0,
+                 from /usr/include/gtk-2.0/gtk/gtk.h:53,
+                 from xmms.h:21,
+                 from main.c:20:
+/usr/include/gtk-2.0/gtk/gtksignal.h:121:8: note: expected ‘GCallback’ but argument is of type ‘void (*)(struct GtkWidget *, struct GtkWidget **)’
+ gulong gtk_signal_connect_full   (GtkObject     *object,
+        ^
+main.c: In function ‘main’:
+main.c:4208:8: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+    read(fd, randtable, RANDTABLE_SIZE);
+        ^
+main.c:4227:9: warning: ignoring return value of ‘setuid’, declared with attribute warn_unused_result [-Wunused-result]
+   setuid(getuid());/*da test*/
+         ^
+/bin/sh ../libtool --tag=CC --mode=link gcc  -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -lglib-2.0  -pthread -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lfontconfig -lfreetype -Wl,--export-dynamic -lgmodule-2.0 -pthread -lgthread-2.0 -pthread -lglib-2.0  -lz -lm -lX11 -lXext -ldl -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lfontconfig -lfreetype -Wl,--export-dynamic -lgmodule-2.0 -pthread -lgthread-2.0 -pthread -lglib-2.0  -o xmms -export-dynamic  bmp.o skin.o util.o output.o fft.o input.o effect.o general.o visualization.o fullscreen.o pluginenum.o playlist.o controlsocket.o dock.o widget.o sbutton.o pbutton.o tbutton.o textbox.o menurow.o hslider.o monostereo.o vis.o svis.o number.o playstatus.o playlist_list.o playlist_slider.o playlist_popup.o eq_graph.o eq_slider.o main.o skinwin.o prefswin.o playlistwin.o equalizer.o hints.o about.o sm.o getopt.o getopt1.o urldecode.o mkdtemp.o -lpthread -lSM -lICE -lXxf86vm ../libxmms/libxmms.la  
+gcc -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -pthread -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -Wl,--export-dynamic -pthread -pthread -Wl,--export-dynamic -pthread -pthread -o .libs/xmms bmp.o skin.o util.o output.o fft.o input.o effect.o general.o visualization.o fullscreen.o pluginenum.o playlist.o controlsocket.o dock.o widget.o sbutton.o pbutton.o tbutton.o textbox.o menurow.o hslider.o monostereo.o vis.o svis.o number.o playstatus.o playlist_list.o playlist_slider.o playlist_popup.o eq_graph.o eq_slider.o main.o skinwin.o prefswin.o playlistwin.o equalizer.o hints.o about.o sm.o getopt.o getopt1.o urldecode.o mkdtemp.o -Wl,--export-dynamic  -lz -lm -lX11 -lXext -ldl -lgmodule-2.0 -lgthread-2.0 -lpthread -lSM -lICE -lXxf86vm ../libxmms/.libs/libxmms.so -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype 
+creating xmms
+make[4]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+make[2]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/xmms'
+Making all in Output
+make[2]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output'
+Making all in OSS
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/OSS'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/OSS'
+Making all in esd
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/esd'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/esd'
+Making all in disk_writer
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/disk_writer'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/disk_writer'
+Making all in solaris
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/solaris'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/solaris'
+Making all in sun
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/sun'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/sun'
+Making all in alsa
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output/alsa'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output/alsa'
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Output'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output'
+make[2]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Output'
+Making all in Input
+make[2]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input'
+Making all in wav
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/wav'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/wav'
+Making all in mpg123
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/mpg123'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/mpg123'
+Making all in mikmod
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/mikmod'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/mikmod'
+Making all in cdaudio
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/cdaudio'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/cdaudio'
+Making all in tonegen
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/tonegen'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/tonegen'
+Making all in vorbis
+make[3]: Entering directory '/home/xdien/workspace/xmms-1.2.11/Input/vorbis'
+/bin/sh ../../libtool --tag=CC --mode=link gcc  -g -O2 -Wall -Wpointer-arith -finline-functions -ffast-math -funroll-all-loops -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -lglib-2.0  -pthread -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/freetype2 -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype    -o libvorbis.la -rpath /usr/local/lib/xmms/Input -module -avoid-version -export-symbols-regex "get_.plugin_info" vorbis.lo configure.lo http.lo fileinfo.lo vcedit.lo -lpthread  -lvorbis -lm  -logg -lvorbisfile  
+gcc: error: /home/xdien/workspace/xmms-1.2.11/Input/vorbis/.libs/libvorbis.so: No such file or directory
+
+make[3]: *** [libvorbis.la] Error 1
+make[2]: *** [all-recursive] Error 1
+*** Warning: Linking the shared library libvorbis.la against the loadable module
+*** libvorbis.so is not portable!
+make[1]: *** [all-recursive] Error 1
+make: *** [all] Error 2
+rm -fr  .libs/libvorbis.exp .libs/libvorbis.ver
+generating symbol list for `libvorbis.la'
+/usr/bin/nm -B  .libs/vorbis.o .libs/configure.o .libs/http.o .libs/fileinfo.o .libs/vcedit.o  | sed -n -e 's/^.*[ 	]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ 	][ 	]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | /bin/sed 's/.* //' | sort | uniq > .libs/libvorbis.exp
+/bin/grep -E -e "get_.plugin_info" ".libs/libvorbis.exp" > ".libs/libvorbis.expT"
+mv -f ".libs/libvorbis.expT" ".libs/libvorbis.exp"
+echo "{ global:" > .libs/libvorbis.ver
+ cat .libs/libvorbis.exp | sed -e "s/\(.*\)/\1;/" >> .libs/libvorbis.ver
+ echo "local: *; };" >> .libs/libvorbis.ver
+ gcc -shared  .libs/vorbis.o .libs/configure.o .libs/http.o .libs/fileinfo.o .libs/vcedit.o  -Wl,--rpath -Wl,/home/xdien/workspace/xmms-1.2.11/Input/vorbis/.libs -Wl,--rpath -Wl,/usr/local/lib/xmms/Input -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype -lpthread /home/xdien/workspace/xmms-1.2.11/Input/vorbis/.libs/libvorbis.so -lm -logg -lvorbisfile  -pthread -Wl,-soname -Wl,libvorbis.so -Wl,-version-script -Wl,.libs/libvorbis.ver -o .libs/libvorbis.so
+Makefile:357: recipe for target 'libvorbis.la' failed
+make[3]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input/vorbis'
+Makefile:316: recipe for target 'all-recursive' failed
+make[2]: Leaving directory '/home/xdien/workspace/xmms-1.2.11/Input'
+Makefile:469: recipe for target 'all-recursive' failed
+make[1]: Leaving directory '/home/xdien/workspace/xmms-1.2.11'
+Makefile:307: recipe for target 'all' failed
+
+**** Build Finished ****

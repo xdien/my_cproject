@@ -1,0 +1,3 @@
+chat -Vvs '' "AT\!SELRAT=02" 'OK' '' < /dev/ttyUSB3 > /dev/ttyUSB3;
+sleep 15;
+chat -Vvs '' "AT\!SELRAT=01" 'OK' '' < /dev/ttyUSB3 > /dev/ttyUSB3;

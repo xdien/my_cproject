@@ -1,0 +1,6 @@
+com.android.ide.eclipse.adt.fixLegacyEditors=1
+com.android.ide.eclipse.adt.palette=ICON_TEXT
+com.android.ide.eclipse.adt.sdk=/opt/android-sdk-update-manager
+design.palette.flyout.width=178
+design.structure.flyout.width=194
+eclipse.preferences.version=1

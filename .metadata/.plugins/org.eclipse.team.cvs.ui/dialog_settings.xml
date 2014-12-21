@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_PATH_ID">
+			<item value="/cvs"/>
+			<item value="xmmsCVS"/>
+		</list>
+		<list key="ConfigurationWizardMainPage.STORE_HOSTNAME_ID">
+			<item value="cvs.xmms.org"/>
+		</list>
+	</section>
+</section>

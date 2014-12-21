@@ -1,0 +1,3 @@
+{ global:
+get_eplugin_info;
+local: *; };

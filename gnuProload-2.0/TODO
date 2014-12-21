@@ -1,0 +1,13 @@
+TODO
+=============================
+* Cleanup callback.h and include all application specific definitions in a separate
+header file.
+
+Features Pending
+=================
+* Proper logging in all functions.
+* Redirect burning and verification data to separate files for better comparision.
+* Provide a way to email the collected logs from within the GUI.
+
+
+

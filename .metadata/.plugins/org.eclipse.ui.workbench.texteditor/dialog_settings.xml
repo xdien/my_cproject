@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="409" key="DIALOG_X_ORIGIN"/>
+		<item value="106" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="main" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="main"/>
+			<item value="gtk_init"/>
+			<item value="gtk_ini`t"/>
+			<item value="gtk_int"/>
+			<item value="gtk_main"/>
+			<item value="leader"/>
+			<item value="xmms_remote_playlist_add_url_string(xmms_session,(gchar) url);"/>
+			<item value="g_thread_init"/>
+		</list>
+		<list key="replacehistory">
+			<item value="g_path_get_basename"/>
+			<item value="g_ascii_strncasecmp"/>
+			<item value="c"/>
+			<item value="GtkOldEditable"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="297" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="403" key="DIALOG_HEIGHT"/>
+		<item value="935" key="DIALOG_X_ORIGIN"/>
+		<item value="13" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

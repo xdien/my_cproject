@@ -1,0 +1,124 @@
+
+**** Build of configuration Default for project spectrum3d-2.4.0 ****
+
+make all 
+Making all in src
+make[1]: Entering directory '/home/xdien/workspace/spectrum3d-2.4.0/src'
+make  all-am
+make[2]: Entering directory '/home/xdien/workspace/spectrum3d-2.4.0/src'
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT display.o -MD -MP -MF .deps/display.Tpo -c -o display.o display.c
+mv -f .deps/display.Tpo .deps/display.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT events.o -MD -MP -MF .deps/events.Tpo -c -o events.o events.c
+mv -f .deps/events.Tpo .deps/events.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT equalizer.o -MD -MP -MF .deps/equalizer.Tpo -c -o equalizer.o equalizer.c
+mv -f .deps/equalizer.Tpo .deps/equalizer.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT geis.o -MD -MP -MF .deps/geis.Tpo -c -o geis.o geis.c
+mv -f .deps/geis.Tpo .deps/geis.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT gstreamer.o -MD -MP -MF .deps/gstreamer.Tpo -c -o gstreamer.o gstreamer.c
+mv -f .deps/gstreamer.Tpo .deps/gstreamer.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+main.c: In function ‘setPlayButtonIcon’:
+main.c:59:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  GtkWidget *playImage = gtk_image_new_from_stock (GTK_STOCK_MEDIA_PLAY, GTK_ICON_SIZE_SMALL_TOOLBAR);
+  ^
+main.c:59:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+main.c:60:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  GtkWidget *pauseImage = gtk_image_new_from_stock (GTK_STOCK_MEDIA_PAUSE, GTK_ICON_SIZE_SMALL_TOOLBAR);
+  ^
+main.c:60:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+main.c: In function ‘main’:
+main.c:375:2: warning: ‘gtk_widget_modify_bg’ is deprecated (declared at /usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h:736): Use 'gtk_widget_override_background_color' instead [-Wdeprecated-declarations]
+  gtk_widget_modify_bg(GTK_WIDGET(spectrum3dGui.stop), GTK_STATE_NORMAL, &color);
+  ^
+main.c:376:2: warning: ‘gtk_widget_modify_bg’ is deprecated (declared at /usr/include/gtk-3.0/gtk/deprecated/gtkstyle.h:736): Use 'gtk_widget_override_background_color' instead [-Wdeprecated-declarations]
+  gtk_widget_modify_bg(GTK_WIDGET(spectrum3dGui.stop), GTK_STATE_PRELIGHT, &color);
+  ^
+main.c:401:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  image = gtk_image_new_from_stock (GTK_STOCK_REFRESH, GTK_ICON_SIZE_LARGE_TOOLBAR);
+  ^
+main.c:401:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+main.c:433:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  image = gtk_image_new_from_stock (GTK_STOCK_MEDIA_STOP, GTK_ICON_SIZE_SMALL_TOOLBAR);
+  ^
+main.c:433:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+main.c:441:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  image = gtk_image_new_from_stock (GTK_STOCK_MEDIA_RECORD, GTK_ICON_SIZE_SMALL_TOOLBAR);
+  ^
+main.c:441:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+mv -f .deps/main.Tpo .deps/main.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT menu.o -MD -MP -MF .deps/menu.Tpo -c -o menu.o menu.c
+menu.c: In function ‘onPreferences’:
+menu.c:60:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_OK,GTK_RESPONSE_OK,
+    ^
+menu.c:61:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_CANCEL,GTK_RESPONSE_CANCEL,
+    ^
+menu.c: In function ‘onShortcuts’:
+menu.c:369:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_OK,GTK_RESPONSE_OK,
+    ^
+menu.c: In function ‘onGesturesShortcuts’:
+menu.c:455:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_OK,GTK_RESPONSE_OK,
+    ^
+menu.c: In function ‘onQuickStart’:
+menu.c:520:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_OK,GTK_RESPONSE_OK,
+    ^
+mv -f .deps/menu.Tpo .deps/menu.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT onclick.o -MD -MP -MF .deps/onclick.Tpo -c -o onclick.o onclick.c
+mv -f .deps/onclick.Tpo .deps/onclick.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT preferences.o -MD -MP -MF .deps/preferences.Tpo -c -o preferences.o preferences.c
+mv -f .deps/preferences.Tpo .deps/preferences.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT record.o -MD -MP -MF .deps/record.Tpo -c -o record.o record.c
+record.c: In function ‘record_window’:
+record.c:38:3: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+   GTK_STOCK_OK,GTK_RESPONSE_OK,
+   ^
+record.c:39:3: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+   GTK_STOCK_CANCEL,GTK_RESPONSE_CANCEL,
+   ^
+record.c:59:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+mv -f .deps/record.Tpo .deps/record.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT scale.o -MD -MP -MF .deps/scale.Tpo -c -o scale.o scale.c
+  image = gtk_image_new_from_stock (GTK_STOCK_MEDIA_RECORD, GTK_ICON_SIZE_BUTTON);
+  ^
+record.c:59:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+record.c:65:2: warning: ‘gtk_image_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkimage.h:122): Use 'gtk_image_new_from_icon_name' instead [-Wdeprecated-declarations]
+  image = gtk_image_new_from_stock (GTK_STOCK_MEDIA_STOP, GTK_ICON_SIZE_BUTTON);
+  ^
+record.c:65:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+mv -f .deps/scale.Tpo .deps/scale.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT testrtpool.o -MD -MP -MF .deps/testrtpool.Tpo -c -o testrtpool.o testrtpool.c
+mv -f .deps/testrtpool.Tpo .deps/testrtpool.Po
+gcc -DHAVE_CONFIG_H -I.  -DDATADIR='"/usr/local/share"'   -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -MT typesource.o -MD -MP -MF .deps/typesource.Tpo -c -o typesource.o typesource.c
+typesource.c: In function ‘select_audio_file’:
+typesource.c:137:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
+    ^
+typesource.c:138:4: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+    GTK_STOCK_OPEN, GTK_RESPONSE_OK,
+    ^
+typesource.c: In function ‘show_progression’:
+typesource.c:238:2: warning: ‘gtk_button_new_from_stock’ is deprecated (declared at /usr/include/gtk-3.0/gtk/gtkbutton.h:103): Use 'gtk_button_new_with_label' instead [-Wdeprecated-declarations]
+  button = gtk_button_new_from_stock(GTK_STOCK_CANCEL);
+  ^
+typesource.c:238:2: warning: ‘GtkStock’ is deprecated [-Wdeprecated-declarations]
+mv -f .deps/typesource.Tpo .deps/typesource.Po
+gcc  -g -O2 -pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include  -pthread -I/usr/include/gstreamer-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include    -o spectrum3d display.o events.o equalizer.o geis.o gstreamer.o main.o menu.o onclick.o preferences.o record.o scale.o testrtpool.o typesource.o  -ljack -lGLU -lGL -lSDL  -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0  -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0 
+make[2]: Leaving directory '/home/xdien/workspace/spectrum3d-2.4.0/src'
+make[1]: Leaving directory '/home/xdien/workspace/spectrum3d-2.4.0/src'
+Making all in data
+make[1]: Entering directory '/home/xdien/workspace/spectrum3d-2.4.0/data'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/xdien/workspace/spectrum3d-2.4.0/data'
+Making all in doc
+make[1]: Entering directory '/home/xdien/workspace/spectrum3d-2.4.0/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/xdien/workspace/spectrum3d-2.4.0/doc'
+make[1]: Entering directory '/home/xdien/workspace/spectrum3d-2.4.0'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/xdien/workspace/spectrum3d-2.4.0'
+
+**** Build Finished ****

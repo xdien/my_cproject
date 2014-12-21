@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="235" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="474" key="dialogHeight"/>
+		<item value="847" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.android.ide.eclipse.adt.project.ImportProjectWizard.NewPrj" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="com.android.ide.eclipse.wizards.category"/>
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="798" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="736" key="DIALOG_HEIGHT"/>
+		<item value="45" key="DIALOG_X_ORIGIN"/>
+		<item value="-9" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="com.android.ide.eclipse.adt.project.ImportProjectWizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="com.android.ide.eclipse.wizards.category"/>
+			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
+		</list>
+	</section>
+</section>

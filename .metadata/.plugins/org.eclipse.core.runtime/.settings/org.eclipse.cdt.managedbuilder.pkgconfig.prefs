@@ -1,0 +1,4 @@
+PKG_CONFIG_BIN\ -\ xmms-1.2.11=pkg-config 
+PKG_CONFIG_LIBDIR\ -\ xmms-1.2.11=
+PKG_CONFIG_PATH\ -\ xmms-1.2.11=
+eclipse.preferences.version=1

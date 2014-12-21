@@ -1,0 +1,2 @@
+chat -Vs '' "AT$1" 'OK' '' < /dev/ttyUSB3 > /dev/ttyUSB3
+#@

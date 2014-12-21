@@ -1,0 +1,106 @@
+package com.example.crazyapp.sliding;
+
+import android.app.Fragment;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.text.TextPaint;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.crazy.xdien.imageedit.R;
+import com.crazy.xdien.imageedit.sliding.CrazyActivity;
+import com.crazy.xdien.imageedit.sliding.draw_.DragRectView;
+import com.crazy.xdien.imageedit.sliding.draw_.drawRect;
+
+import org.opencv.android.Utils;
+import org.opencv.core.Mat;
+import org.opencv.core.Point;
+
+/**
+ * Created by xdien on 9/29/14.
+ */
+public class CutFragment extends Fragment {
+    private int action = 0;
+    public void CutFrament(){};
+    private int mStartX = 0;
+    private int mStartY = 0;
+    private int mEndX = 0;
+    private int mEndY = 0;
+    private  int x,y;
+    private boolean mDrawRect = false;
+    private TextPaint mTextPaint = null;
+    private DragRectView.OnUpCallback mCallback = null;
+    private drawRect rect;
+    private Mat src;
+    private Point toado;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_cut, container, false);
+        toado = new Point(0,0);
+        rect = new drawRect();
+        rect.setDraw(rect.RECTANGLE);
+        src = new Mat();
+        Utils.bitmapToMat(CrazyActivity.thumbnail,src);
+        rect.setSourceMat(src);
+        Button b = (Button) rootView.findViewById(R.id.cut_button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(Math.abs(mStartX -mEndX) > 0 && Math.abs(mEndY - mStartY)> 0) {
+                    Bitmap croppedBitmap = Bitmap.createBitmap(CrazyActivity.thumbnail, Math.min(mStartX, mEndX), Math.min(mStartY, mEndY), Math.abs(mStartX - mEndX), Math.abs(mStartY - mEndY));
+                    CrazyActivity.main_ImageView.setImageBitmap(croppedBitmap);
+                    CrazyActivity.main_ImageView.invalidate();
+                }
+                else
+                {
+                    Toast.makeText(getActivity(),"hay chon khung truoc khi cat", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+        CrazyActivity.main_ImageView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                action = motionEvent.getAction();
+
+                switch (action){
+                    case MotionEvent.ACTION_DOWN:
+                        toado = CrazyActivity.getCoordinate(motionEvent);
+                        mDrawRect = false;
+                        mStartX = (int) toado.x;
+                        mStartY = (int) toado.y;
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        toado = CrazyActivity.getCoordinate(motionEvent);
+                        x = (int) toado.x;
+                        y = (int) toado.y;
+                            if (!mDrawRect || Math.abs(x - mEndX) > 5 || Math.abs(y - mEndY) > 5) {
+                                mEndX =  x;
+                                mEndY = y;
+                                //rect.setPointRect(Math.min(mStartX, mEndX), Math.min(mStartY, mEndY),
+                                //        Math.max(mEndX, mStartX), Math.max(mEndY, mStartY));
+                                //rect.drawrectangle();
+                            }
+                            mDrawRect = true;
+                        break;
+                    default:
+                        break;
+                }
+                return false;
+            }
+        });
+//here the rest of your code
+        return rootView;
+    }
+
+}

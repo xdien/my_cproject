@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;myUDPsock/myUDPsock.cpp&apos; to &apos;myUDPserver.cpp&apos;" description="Rename resource &apos;myUDPsock.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="myUDPsock.cpp" name="myUDPserver.cpp" stamp="1416630295299" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;myUDPsock/test_&apos; to &apos;test_.cpp&apos;" description="Rename resource &apos;test_&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test_" name="test_.cpp" stamp="1416643532486" updateReferences="true"/>
+</session>

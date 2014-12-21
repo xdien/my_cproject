@@ -1,0 +1,57 @@
+package sliding;
+
+import imageCache.GridViewAdapter;
+import android.app.Fragment;
+import android.graphics.Matrix;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.GridView;
+
+import com.crazy.xdien.imageedit.CrazyActivity;
+import com.crazy.xdien.imageedit.R;
+
+import static org.opencv.imgproc.Imgproc.cvtColor;
+
+/**
+ * Created by xdien on 10/2/14.
+ */
+public class EffectFragment extends Fragment implements View.OnTouchListener {
+
+   //public void HistogramFragment(){};
+    Matrix invertMatrix;
+    private GridView gridView;
+    private GridViewAdapter mygridViewAdapter;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        //((ViewGroup)scrollChildLayout.getParent()).removeView(scrollChildLayout);
+        final View rootView = inflater.inflate(R.layout.fragment_effects, container,false);
+        invertMatrix = new Matrix();
+        gridView = (GridView) rootView.findViewById(R.id.gridView);
+        mygridViewAdapter = new GridViewAdapter(getActivity());
+        mygridViewAdapter.AddImages(CrazyActivity.thumbnail,0);
+        mygridViewAdapter.AddImages(CrazyActivity.thumbnail,1);
+        mygridViewAdapter.AddImages(CrazyActivity.thumbnail,2);
+        mygridViewAdapter.AddImages(CrazyActivity.thumbnail,3);
+        gridView.setAdapter(mygridViewAdapter);
+
+        return rootView;
+    }
+    public boolean onTouch(View v, MotionEvent event) {
+        int action = event.getAction();
+        //Log.i("Touch main_ImageView coordinates", String.valueOf(MainActivity.main_ImageView.getTop()));
+        switch (action) {
+            default:
+                break;
+        }
+        return true;
+    }
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+}

@@ -1,0 +1,9 @@
+14:30:55 **** Auto Build of configuration Debug for project SuaAnh ****
+/opt/android-ndk/ndk-build all 
+Android NDK: There is no Android.mk under /home/xdien/workspace/SuaAnh/jni    
+Android NDK: If this is intentional  please define APP_BUILD_SCRIPT to point   
+/opt/android-ndk/build/core/add-application.mk:224: *** Android NDK: Aborting...    .  Stop.
+Android NDK: to a valid NDK build script.    
+
+14:30:55 Build Finished (took 177ms)
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_thresholdType"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:max="3"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_threshold_value"
+        android:layout_above="@+id/seekBar_thresholdType"
+        android:max="255"
+        android:indeterminate="false" />
+</RelativeLayout>

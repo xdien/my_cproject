@@ -1,0 +1,68 @@
+About gnuProloadV2.0
+=================================
+** (This is a general introduction to gnuProload. To read how to
+install and use gnuProload, please see INSTALL) **
+
+
+gnuProloadV2.0 is yet another software to enable you to program the AT89S52
+over Linux. 
+
+The reason I created gnuProload, is out of sheer necessity. At one point
+of time, I was happily creating AT89S52 programs over windows. I had this
+AT89S52 development board from Sunrom Technologies(www.sunrom.com), which was
+programmed using an ICSP(In-System Programming Programming) board, also 
+by Sunrom Technologies.
+
+The ICSP board,(Sunrom part no. 1001-3470) needed a software called 'Proload'
+to program the AT89S52 microcontroller in the development board. 
+
+However, Proload was a pure windows based software which did not have any 
+counterpart that ran over Linux.
+
+As a result, for many months my development environment was restricted only
+to windows. I really wanted to make use of the wonderful assortment of software
+for 8052 based microcontrollers available on Linux. Prime examples would be
+the popular SDCC(Small Device C compiler) and asem51(8051 Assembler).
+
+So I decided to make the switch to Linux for all my AT89S52 based projects.
+I had everything: asem51/SDCC for assembling/compiling my programs and svn for
+revision control. However, I was limited by the lack of a software that would
+program the microcontroller for me. Surely rebooting into Linux everytime I
+needed to re-program my AT89S52 was not a practical option!
+
+And so gnuProloadV2.0 was born out of this sheer necessity. V2.0 because 
+the initial version, V1.0 that I created was a command line version. 
+Once the command line version was created I decided to write a GUI version 
+of it, using GTK+.
+
+And so here you are, I present to you gnuProloadV2.0!
+
+Another important thing about gnuProloadV2.0 is that, you can not only
+use it for programming the AT89S52 development board by Sunrom Technologies
+but also for any hardware that is based on the 'Easy-Downloader' developed
+by Prof. Wichit Sirichote of the University of Thailand, Bangkok.
+
+In fact, the gnuProload protocol was developed by Prof. Wichit in the beginning.
+Sunrom has in fact, re-used it for making their own programmer.
+
+More information about 'Easy-Downloader' can be found at: 
+http://www.kmitl.ac.th/~kswichit%20/easy2/easy2.htm
+
+Many thanks to Prof. Wichit Sirichote of giving me permission to develop 
+gnuProload based on his serial programming protocol.
+
+Also please note that, since I only had the Sunrom hardware I was able to test
+gnuProload only with it. In case you are using any other 'Easy-Downloader' compatible
+hardware, please try it and let me know if something does not work.
+
+My email is seemanta@gmail.com
+
+Have fun! ;-)
+
+~Seemanta Dutta
+
+
+
+
+                 
+

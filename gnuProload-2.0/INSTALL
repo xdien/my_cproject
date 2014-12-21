@@ -1,0 +1,78 @@
+
+Basic Installation:
+=====================================
+Installation is very simple:
+
+1. Gunzip and Untar the package. A folder called gnuProload-2.0/
+would be created.
+
+2. Go to the folder by typing  'cd gnuProload-2.0'
+
+3. Type ./configure to generate the makefiles.
+
+4. Type 'make'.
+
+5. Type 'make install' to install it.
+
+Standard 'configure' options apply.(e.g --prefix etc.) 
+
+
+Basic usage:
+======================================
+
+At the command prompt, just type 'gnuProload', assuming 
+your PATH variable is set correctly. You should get the UI
+for gnuProload. 
+
+For a quickstart guide, go to Help->QuickStart in the GUI.
+
+Dependencies:
+==================
+gnuProload is written in GTK+ and so dependent on libgtk and all its associated libraries like
+glib-2.0/libpango etc.
+
+
+Notes:
+=======
+
+1. By default, gnuProloadV2.0 would try to probe your serial
+port(/dev/ttyS0). In case no hardware is connected, it would
+timeout and shall indicate so.
+
+2. By default simulation of burning would be off.By defining 
+the macro 'SIMULATE_BURNING' within the file 'programmer.c', 
+you may simulate the burning and check its 'usability' even if 
+you do not have the actual hardware connected.
+
+3. By default, logging would be turned off in gnuProloadV2.0. The
+following macros can be defined in the file 'callbacks.h' for 
+logging:
+
+#define GNU_PROLOAD_LOGGING_ALL  - To turn on ALL types of logging/
+
+#define GNU_PROLOAD_LOG_ERROR  - To turn on errors, which would call abort() in turn.
+#define GNU_PROLOAD_LOG_INFO   - To turn on informational statements.
+#define GNU_PROLOAD_LOG_WARNING - To turn on warnings.
+#define GNU_PROLOAD_LOG_DEBUG  - To turn on debug messages.
+#define GNU_PROLOAD_LOG_FUNC   - To turn on function entry and exit point logs.
+
+4. By default, gnuProloadV2.0 would try to probe '/dev/ttyS0' for the connected hardware.
+You may change it by changing the macro 'PROGRAMMER_DEV' within the file 'programmer.c'
+You also must make sure that you have read-write permissions to your serial port.
+This can be done by giving the command 'chmod 766 /dev/ttyS0' as root.
+
+5. For dumping response from the board, turn on the macro 'DEBUG' within the file
+'programmer.c'. Also there are various types of DUMP, like:
+
+DUMP_ROM - This will dump the ROM data that is getting burned.
+DUMP_CMDS - This will dump the commands that are sent to the board.
+DUMP_RESPONSE - This will dump the response from the board.
+
+Each of the above are macros and can be individually controlled from within 'programmer.c'
+By default, all types of DUMP would be disabled.
+
+6. In case you are reporting any problem please enable all the 3 kinds of dumps to a file
+and send it across to me at seemanta@gmail.com along with the hex file that you were trying
+to burn.
+
+7. For any doubts/queries/suggestions, feel free to contact me at seemanta@gmail.com

@@ -1,0 +1,21 @@
+
+**** Build of configuration Default for project udptunnel ****
+
+make all 
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o socket.o socket.c
+socket.c: In function ‘isipaddr’:
+socket.c:558:9: warning: variable ‘len’ set but not used [-Wunused-but-set-variable]
+     int len;
+         ^
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o message.o message.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o client.o client.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o list.o list.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o acl.o acl.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o udpserver.o udpserver.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX   -c -o udpclient.o udpclient.c
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX -o udptunnel udptunnel.c socket.o message.o client.o list.o acl.o udpserver.o udpclient.o 
+strip udptunnel
+gcc -Wall -Wshadow -Wpointer-arith -Wwrite-strings   -D LINUX -o pwnat pwnat.c socket.o message.o client.o list.o acl.o udpserver.o udpclient.o 
+strip pwnat
+
+**** Build Finished ****
